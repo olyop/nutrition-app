@@ -1,0 +1,21 @@
+{
+	"start_url":"/",
+	"display":"fullscreen",
+	"theme_color":"#000000",
+	"orientation": "portrait",
+	"short_name":"Nutrition App",
+	"background_color":"#ffffff",
+	"name":"Nutrition Application",
+	"icons":[
+		{
+			"src":"/icons/192.png",
+			"type":"image/png",
+			"sizes":"192x192"
+		},
+		{
+			"src":"/icons/512.png",
+			"type":"image/png",
+			"sizes":"512x512"
+		}
+	]
+}

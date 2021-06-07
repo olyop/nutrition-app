@@ -1,0 +1,4 @@
+type Mutation {
+	logIn(input: LogInInput!): JWT!
+  signUp(input: SignUpInput!): JWT!
+}

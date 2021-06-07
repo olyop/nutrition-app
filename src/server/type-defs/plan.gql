@@ -1,0 +1,6 @@
+type Plan {
+	user: User!
+	name: String!
+	planID: UUID!
+	dateCreated: Timestamp!
+}

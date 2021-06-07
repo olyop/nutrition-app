@@ -1,0 +1,5 @@
+type FoodNutrient {
+	nutrient: Nutrient!
+	amount: PositiveFloat
+	foodNutrientID: String!
+}

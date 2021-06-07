@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		"src",
+		"jest.config.ts",
+		"webpack.config.ts",
+		"tailwind.config.js"
+	],
+	"exclude": [
+		"build",
+		"node_modules"
+	]
+}

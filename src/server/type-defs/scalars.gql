@@ -1,0 +1,8 @@
+scalar JWT
+scalar UUID
+scalar Date
+scalar Email
+scalar Timestamp
+scalar PositiveInt
+scalar PositiveFloat
+scalar NonNegativeInt

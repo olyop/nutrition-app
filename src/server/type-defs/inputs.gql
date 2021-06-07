@@ -1,0 +1,10 @@
+input LogInInput {
+	userID: UUID!
+	password: String!
+}
+
+input SignUpInput {
+	name: String!
+	email: Email!
+	password: String!
+}

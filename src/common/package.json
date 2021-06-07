@@ -1,0 +1,17 @@
+{
+	"license": "MIT",
+	"version": "2.0.0",
+	"description": "nutrition-app-common",
+	"name": "@oly_op/nutrition-app-common",
+	"bugs": "https://github.com/olyop/nutrition-app/issues",
+	"homepage": "https://github.com/olyop/nutrition-app/blob/master/README.md",
+	"author": {
+		"name": "Oliver Plummer",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"repository": {
+    "type": "git",
+    "directory": "src/common",
+		"url": "https://github.com/olyop/nutrition-app.git"
+	}
+}

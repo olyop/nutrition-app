@@ -1,0 +1,26 @@
+.Authorization {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__content {
+		width: 326rem;
+		background-color: #fff; }
+	&__toggle {
+		background-color: #eee; }
+	&__label,
+	&__input {
+		width: 100%;
+		display: block; }
+	&__submit {
+		background-color: #eee; }
+	&__input {
+		outline: none;
+		padding: var(--space-half);
+		border-radius: var(--border-radius);
+		border: 1px solid var(--border-color);
+		transition: var(--transition-duration) background-color;
+		&:hover {
+			background-color: #eee; }
+		&:focus {
+			border-color: #757575; } } }

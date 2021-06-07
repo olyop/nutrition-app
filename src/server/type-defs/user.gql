@@ -1,0 +1,6 @@
+type User {
+	name: String!
+	email: Email!
+	userID: UUID!
+	dateJoined: Timestamp!
+}

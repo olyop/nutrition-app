@@ -1,0 +1,5 @@
+type Nutrient {
+	name: String!
+	unitName: String!
+	nutrientID: String!
+}
