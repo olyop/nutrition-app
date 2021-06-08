@@ -1,7 +1,7 @@
 import { createBem } from "@oly_op/bem"
-import { createElement, CSSProperties, FC } from "react"
 import Button from "@oly_op/react-button"
 import { NavLink } from "react-router-dom"
+import { createElement, CSSProperties, FC } from "react"
 
 import {
 	useDispatch,
@@ -22,17 +22,25 @@ const Sidebar: FC = () => {
 			dispatch(toggleSidebar())
 		}
 
-	const style: CSSProperties = {
-		width: sidebar ? "var(--sidebar-width)" : "64rem",
+	const rootStyle: CSSProperties = {
+		width: sidebar ? "var(--sidebar-width)" : "61rem",
+	}
+
+	const menuStyle: CSSProperties = {
+		paddingLeft: sidebar ? "18rem" : undefined,
+		justifyContent: sidebar ? "flex-start" : undefined,
+		width: sidebar ? undefined : "calc(var(--space) + var(--button-height))",
 	}
 
 	return (
-		<header className={bem("", "BorderRight")} style={style}>
-			<div className="PaddingHalf BorderBottom Flex">
+		<header className={bem("", "BorderRight")} style={rootStyle}>
+			<div className="BorderBottom">
 				<Button
 					icon="menu"
 					transparent
+					style={menuStyle}
 					onClick={handleMenuClick}
+					className={bem("menu", "button")}
 					text={sidebar ? "Nutrition-App" : undefined}
 				/>
 			</div>
@@ -43,9 +51,9 @@ const Sidebar: FC = () => {
 					children={(
 						<Button
 							transparent
-							icon="list"
-							className={bem("button")}
+							icon="dashboard"
 							text={sidebar ? "Plans" : undefined}
+							className={bem("nav-button", "button")}
 						/>
 					)}
 				/>
@@ -56,8 +64,8 @@ const Sidebar: FC = () => {
 						<Button
 							transparent
 							icon="search"
-							className={bem("button")}
 							text={sidebar ? "Search" : undefined}
+							className={bem("nav-button", "button")}
 						/>
 					)}
 				/>
