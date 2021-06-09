@@ -26,10 +26,19 @@ const Sidebar: FC = () => {
 		width: sidebar ? "var(--sidebar-width)" : "61rem",
 	}
 
+	const buttonStyle: CSSProperties = {
+		justifyContent: sidebar ? "flex-start" : "center",
+	}
+
 	const menuStyle: CSSProperties = {
+		...buttonStyle,
 		paddingLeft: sidebar ? "18rem" : undefined,
-		justifyContent: sidebar ? "flex-start" : undefined,
 		width: sidebar ? undefined : "calc(var(--space) + var(--button-height))",
+	}
+
+	const linkStyle: CSSProperties = {
+		...buttonStyle,
+		paddingLeft: sidebar ? "calc(var(--space-half) + -2rem)" : undefined,
 	}
 
 	return (
@@ -52,6 +61,7 @@ const Sidebar: FC = () => {
 						<Button
 							transparent
 							icon="dashboard"
+							style={linkStyle}
 							text={sidebar ? "Plans" : undefined}
 							className={bem("nav-button", "button")}
 						/>
@@ -64,6 +74,7 @@ const Sidebar: FC = () => {
 						<Button
 							transparent
 							icon="search"
+							style={linkStyle}
 							text={sidebar ? "Search" : undefined}
 							className={bem("nav-button", "button")}
 						/>
